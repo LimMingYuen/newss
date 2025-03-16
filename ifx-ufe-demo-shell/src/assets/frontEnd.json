@@ -1,0 +1,42 @@
+{
+    "AvailableUfe": [
+        {
+            "appName": "IFX-uFE-Demo",
+            "resourceName": "demo-app1",
+            "location": "shell-nav-container"
+        },
+        {
+            "appName": "IFX-uFE-Demo",
+            "resourceName": "demo-app2",
+            "location": "shell-main-container"
+        },
+        {
+            "appName": "IFX-uFE-Demo",
+            "resourceName": "demo-app3",
+            "location": "shell-main-container"
+        },
+        {
+            "appName": "IFX-uFE-Demo",
+            "resourceName": "demo-app3-dialog-modal",
+            "location": "dialog-modal"
+        },
+        {
+            "appName": "IFX-uFE-Demo",
+            "resourceName": "demo-app3-dialog-browser",
+            "location": "dialog-browser"
+        },
+        {
+            "appName": "IFX-uFE-Demo",
+            "resourceName": "demo-app3-new-shell-tab",
+            "location": "new-shell-tab"
+        },
+        {
+            "appName": "IFX-uFE-Demo",
+            "resourceName": "demo-app3-new-tab",
+            "location": "new-tab"
+        }
+
+
+
+    ]
+}

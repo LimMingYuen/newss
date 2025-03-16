@@ -1,0 +1,28 @@
+<div class="ufe-apps-container h-100">
+  <div
+    [id]="ShellViewSelectorService.navigationUfeApp().location"
+    class="navigation-container fill">
+    <ifx-ufe-demo-ufe-container
+      [ufeApp]="ShellViewSelectorService.navigationUfeApp()"
+      class="fill" />
+  </div>
+  <div class="fill main-container">
+    <div class="messages-container">
+      <div class="ufe-messages-container">
+        <ifx-ufe-show-command-messages></ifx-ufe-show-command-messages>
+      </div>
+      <div class="peer-messages-container">
+        <app-common-show-peer-messages></app-common-show-peer-messages>
+      </div>
+    </div>
+
+    <div
+      [id]="ShellViewSelectorService.mainUfeApp().location"
+      class="fill">
+      <ifx-ufe-demo-ufe-container
+        [ufeApp]="ShellViewSelectorService.mainUfeApp()"
+        [allowDockout]="true"
+        class="fill" />
+    </div>
+  </div>
+</div>
