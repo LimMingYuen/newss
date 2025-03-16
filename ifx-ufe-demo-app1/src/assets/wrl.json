@@ -1,0 +1,42 @@
+[
+ {
+  "appName": "IFX-uFE-Demo",
+  "resourceName": "demo-app1",
+  "url": "https://localhost:4300",
+  "anonymous": true,
+  "webResourceType": "ufe",
+  "version": 1,
+  "applicationVersion": "1.0.1",
+  "args": []
+ },
+ {
+  "appName": "IFX-uFE-Demo",
+  "resourceName": "demo-app2",
+  "url": "https://localhost:4400",
+  "anonymous": true,
+  "webResourceType": "ufe",
+  "version": 1,
+  "applicationVersion": "1.0.1",
+  "args": []
+ },
+ {
+  "appName": "IFX-uFE-Demo",
+  "resourceName": "show-documentation",
+  "url": "https://localhost:4400/documentation",
+  "anonymous": true,
+  "webResourceType": "ufe",
+  "version": 1,
+  "applicationVersion": "1.0.1",
+  "args": []
+ },
+ {
+  "appName": "IFX-uFE-Demo",
+  "resourceName": "show-documentation-ifx-ufe-demo-app1",
+  "url": "https://localhost:4400/documentation",
+  "anonymous": true,
+  "webResourceType": "ufe",
+  "version": 1,
+  "applicationVersion": "1.0.1",
+  "args": []
+ }
+]
