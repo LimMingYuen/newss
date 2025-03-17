@@ -1,0 +1,59 @@
+{
+  "name": "app-common",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "shared/libs/app-common/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
+      "options": {
+        "project": "shared/libs/app-common/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "shared/libs/app-common/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "shared/libs/app-common/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "shared/libs/app-common/jest.config.ts",
+        "codeCoverage": true
+      },
+      "configurations": {
+        "ci": {
+          "jestConfig": "shared/libs/app-common/jest.ci.config.ts",
+          "ci": true
+        }
+      }
+    },
+    "@angular-lint": {
+      "executor": "@angular-eslint/builder:lint",
+      "options": {
+        "lintFilePatterns": [
+          "projects/ifx-ufe/**/*.ts",
+          "projects/ifx-ufe/**/*.html"
+        ]
+      },
+      "outputs": [
+        "{options.outputFile}"
+      ]
+    },
+    "@nx-lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

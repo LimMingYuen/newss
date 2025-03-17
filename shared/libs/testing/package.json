@@ -1,0 +1,8 @@
+{
+  "name": "@ifx/testing",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "jest-mock": "^29.7.0"
+  },
+  "sideEffects": false
+}

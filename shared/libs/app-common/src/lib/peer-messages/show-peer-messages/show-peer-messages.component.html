@@ -1,0 +1,67 @@
+@if (showPeerMessages()) {
+  <button
+    (click)="onToggleShowPeerMessages()"
+    mat-stroked-button
+    color="primary">
+    Hide Peer Messages
+  </button>
+  <table
+    mat-table
+    [dataSource]="messages()">
+    <!--- Note that these columns can be defined in any order.
+       The actual rendered columns are set as a property on the row definition" -->
+
+    <ng-container matColumnDef="sender">
+      <th
+        mat-header-cell
+        *matHeaderCellDef>
+        Sender
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let element">
+        {{ element.sender }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="command">
+      <th
+        mat-header-cell
+        *matHeaderCellDef>
+        Command
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let element">
+        {{ element.command }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="params">
+      <th
+        mat-header-cell
+        *matHeaderCellDef>
+        Params
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let element">
+        {{ getJsonValue(element.params) }}
+      </td>
+    </ng-container>
+
+    <tr
+      mat-header-row
+      *matHeaderRowDef="displayedMessageColumns"></tr>
+    <tr
+      mat-row
+      *matRowDef="let row; columns: displayedMessageColumns"></tr>
+  </table>
+} @else {
+  <button
+    (click)="onToggleShowPeerMessages()"
+    mat-stroked-button
+    color="primary">
+    Show Peer Messages
+  </button>
+}

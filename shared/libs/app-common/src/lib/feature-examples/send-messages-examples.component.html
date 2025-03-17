@@ -1,0 +1,54 @@
+<mat-sidenav-container autosize class="site-nav-container">
+  <mat-list>
+    <h3 matSubheader>Open another web resource</h3>
+
+    @for (item of this.targetLocations(); track item) {
+      <mat-list-item>
+        <div>
+          <button
+            mat-flat-button
+            class="list-item-button"
+            color="primary"
+            matTooltip="Click to see what it looks like"
+            (click)="onClickShowDialog(item)">
+            <span mat-list-item> {{ item }} </span>
+          </button>
+
+          @if(showDocIcons()) {
+          <button
+            mat-icon-button
+            color="primary"
+            matTooltip="show documentation"
+            (click)="onClickShowDocumentation(item)">
+            <mat-icon>description</mat-icon>
+          </button>
+        }
+        </div>
+      </mat-list-item>
+    }
+    <mat-divider></mat-divider>
+
+    <h3 matSubheader>Send Notifications</h3>
+    @for (item of this.notificationTypes; track item) {
+      <mat-list-item>
+        <button
+          mat-flat-button
+          color="primary"
+          class="list-item-button"
+          matTooltip="Click to see what it looks like"
+          (click)="onClickShowNotification(item)">
+          <span> {{ item }} </span>
+        </button>
+        @if(showDocIcons()) {
+        <button
+          mat-icon-button
+          color="primary"
+          matTooltip="show documentation"
+          (click)="onClickShowDocumentation('notification')">
+          <mat-icon class="ifx-icon">description</mat-icon>
+        </button>
+      }
+      </mat-list-item>
+    }
+  </mat-list>
+</mat-sidenav-container>

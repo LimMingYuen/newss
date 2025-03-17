@@ -1,0 +1,39 @@
+<div class="container">
+  <h4 mat-dialog-title>Header</h4>
+  <mat-dialog-content>
+    @if (isLoading()) {
+      <div class="loading-pane">
+        <mat-spinner diameter="24"></mat-spinner>
+      </div>
+    } @else {
+      <div class="content-pane">
+        <div>
+          <button
+            (click)="onClickDocumentation()"
+            mat-flat-button
+            color="primary">
+            click here to see documentation.
+          </button>
+        </div>
+      </div>
+    }
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <div class="form-actions">
+      <button
+        mat-stroked-button
+        color="primary"
+        type="button"
+        (click)="onClickCancel()">
+        ButtonCancel
+      </button>
+      <button
+        mat-flat-button
+        color="primary"
+        type="button"
+        (click)="onClickSave()">
+        ButtonSave
+      </button>
+    </div>
+  </mat-dialog-actions>
+</div>
