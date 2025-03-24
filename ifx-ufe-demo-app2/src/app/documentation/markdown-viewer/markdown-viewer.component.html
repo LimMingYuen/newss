@@ -1,0 +1,5 @@
+@if (file() || fileValue()) {
+  <markdown [src]="'./assets/markdown/' + (file() ?? fileValue())"> </markdown>
+} @else {
+  <span>File not found</span>
+}

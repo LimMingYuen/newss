@@ -1,0 +1,4 @@
+{
+    "kerberosLocation": "assets/profiles/kerberos.json",
+    "credentialLocation": "assets/profiles/credentials.json"
+}
