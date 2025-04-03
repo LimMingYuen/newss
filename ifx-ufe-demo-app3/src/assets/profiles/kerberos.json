@@ -1,0 +1,10 @@
+{
+    "configId": "kerberos",
+    "authority": "https://ilogin-test.infineon.com",
+    "clientId": "AdiExampleSSO",
+    "redirectUrl": "https://localhost:4500/?auth=kerberos",
+    "scope": "openid",
+    "responseType": "code",
+    "useRefreshToken": false,
+    "renewTimeBeforeTokenExpiresInSeconds": 10
+}

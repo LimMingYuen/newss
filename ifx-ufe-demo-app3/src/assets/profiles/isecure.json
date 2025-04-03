@@ -1,0 +1,6 @@
+{
+  "trustedUrlPrefixes": ["https://localhost:65000"],
+  "appClaimProviderUrl": "https://localhost:65000/api/config/claims",
+  "logLevel": 1,
+  "oidcConfigIds": ["kerberos"]
+}
