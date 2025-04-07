@@ -1,6 +1,0 @@
-{
-  "trustedUrlPrefixes": ["https://localhost:65000", "https://ifx-ufe-demo-api-main.eu-de-1.icp.infineon.com"],
-  "appClaimProviderUrl": "https://ifx-ufe-demo-api-main.eu-de-1.icp.infineon.com/api/config/claims",
-  "logLevel": 1,
-  "oidcConfigIds": ["kerberos", "credentials"]
-}
